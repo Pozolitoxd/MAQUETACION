@@ -1,0 +1,38 @@
+#Proyecto: JESSKA   
+Aplicacion de compra de calzado.
+
+#Estructura del proyecto:
+    index.html: Página principal (landing page) con acceso a login y registro.
+    assets/
+    pages/: Paginas html.
+    script/: Scripts JavaScript.
+    styles/: Estilos personalizados.
+    imagenes/: Recursos gráficos.
+
+#Navegación y Funcionalidad
+1. En index.html se encuentran las ventanas modales para:
+   - Iniciar sesión
+   - Registrarse
+2. Después del login exitoso, el usuario es redirigido a admin.html.
+3. El panel contiene:
+   - Menú lateral con enlaces a módulos:
+     - Dashboard
+     - Productos
+     - Clientes
+   - Cada módulo tiene:
+     - Formulario para agregar nuevos registros.
+
+#Acceso al sistema:
+    Correo:admin@gmail.com
+    Contraseña:123456
+    Ingresar estos datos en la ventana modal de inicio de sesión para acceder al panel administrativo.
+
+#Frameworks y librerias utilizadas:
+    **Bootstrap 5** (Implementado por CDN)
+    **[Splide.js](https://splidejs.com/)** – Slider/carrousel para mostrar elementos destacados.
+        Para visualizar los sliders correctamente, asegúrate de que Splide.js esté bien referenciado.
+    **[Chart.js](https://www.chartjs.org/)** – Para la visualización de datos (gráficas).
+        Las gráficas de Chart.js se cargan dinámicamente en el panel del administrador.
+    **[Uiverse.io](https://uiverse.io/)** – Componentes de botones personalizados de código abierto y personalizables.
+        Los botones personalizados fueron integrados desde [Uiverse.io](https://uiverse.io/buttons)
+    **[Google Fonts](https://fonts.google.com/)** - para tipografía.

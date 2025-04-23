@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+  <!--boostrap styles-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!--splide.js styles-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <!--styles-->
+  <link rel="stylesheet" href="Assets/styles/style.css">
+  <title>JESKKA</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        
+          <h3><strong>JESSKA</strong></h3>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Productos">Productos</a>
+            </li>
+          </ul>
+          <div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Iniciar Sesion
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Modal 1-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1>JESSKA</h1>
+          <h2 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesion</h2>
+        </div>
+        <div class="modal-body">
+
+          <input type="email" id="email" class="btnSesion" placeholder="Email">
+
+          <input type="password" id="Contraseña" class="btnSesion" placeholder="Contraseña">
+          <div class="linksSesion">
+            <a href="">Olvidaste tu contraseña?</a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">No tienes cuenta? Crear una cuenta</a>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="iniciar">Iniciar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1>JESSKA</h1>
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Crear cuenta</h2>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="" class="btnSesion" id="nombre" placeholder="Nombre Completo">
+          <input type="email" name="" class="btnSesion adiccion" id="correoCrear" placeholder="Email">
+          <input type="password" name="" id="Contraseña1" class="btnSesion adiccion" placeholder="Contraseña">
+          <input type="password" name="" id="Contraseña2" class="btnSesion adiccion" placeholder=" Repetir Contraseña">
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Ya tienes cuenta? Iniciar sesion</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="iniciarCuenta">Crear cuenta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--contenido global-->
+  <div id="inicio-landing" class="body-content">
+    <!--Primer contenido-->
+    <div class="global-content">
+      <div class="second-content">
+        <h1><strong>El equilibrio perfecto entre estilo y funcionalidad.</strong></h1>
+      </div>
+      <div class="second-content-img">
+        <img src="Assets/imagenes/logo_Urban_Steps.svg" id="logo" alt="">
+      </div>
+    </div>
+    <!--segundo contenido-->
+    <div class="global-second-contents" id="Productos">
+      <!--carrusel de productos-->
+      <h3>Hombre</h3>
+      <div class="third-content">
+        <section class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-3.svg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Nike</h5>
+                    <p>precio: $180.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-4.svg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Negros Nike</h5>
+                    <p>Precio: $150.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-2.svg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Deportivos Grises</h5>
+                    <p>Precio: $170.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-6.svg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Vans</h5>
+                    <p>Precio: $200.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-7.svg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Adidas</h5>
+                    <p>precio: $240.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-hombre-8.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Deportivos</h5>
+                    <p>Precio: $150.00</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </div>
+      <h3>Mujer</h3>
+
+      <div class="third-content">
+        <section class="splide" id="splide2">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-1.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Deportivo Mujer</h5>
+                    <p>Precio: $170.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-2.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Mujer</h5>
+                    <p>Precio: $150.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-3.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Casuales Mujer</h5>
+                    <p>Precio: $150.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-4.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Mujer</h5>
+                    <p>Precio: $160.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-5.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Blancos Mujer</h5>
+                    <p>Precio: $120.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-mujer-6.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis para Mujer</h5>
+                    <p>Precio: $190.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </div>
+      <h3>Niños</h3>
+
+      <div class="third-content">
+        <section class="splide" id="splide2">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-1.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis para Niños</h5>
+                    <p>Precio: $150.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-2.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis para Niña</h5>
+                    <p>Precio: $140.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-3.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis para Niño</h5>
+                    <p>Precio: $190.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-4.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Unisex</h5>
+                    <p>Precio: $170.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-5.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Nike para Niño</h5>
+                    <p>Precio: $199.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    <img src="Assets/imagenes/carrusel-infante-6.svg" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h5>Tenis Jordan para Niños</h5>
+                    <p>Precio: $210.000</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="button">
+                      <span>Comprar</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="text-center py-4">
+    <p>&copy; 2025 JESSKA. El equilibrio perfecto entre estilo y funcionalidad</p>
+   
+</footer>
+  <!--splide.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <!--boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <!--script-->
+  <script src="Assets/script/script.js"></script>
+</body> 
+
+</html>
